@@ -19,10 +19,10 @@ class Block {
     static mineBlock(previousBlock, data) {
         const index = previousBlock.index + 1;
         const time =  Date.now();
-        const lashHash = previousBlock.previousHash;
-        const hash = this.generateHash(index, time, lashHash, data);
+        const lastHash = previousBlock.hash;
+        const hash = this.generateHash(index, time, lastHash, data);
 
-        return new this(index, time, lashHash, hash, data);
+        return new this(index, time, data, lastHash, hash);
     }
 
     // Generates a new hash

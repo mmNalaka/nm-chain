@@ -6,6 +6,9 @@
   "repository": "git@github.com:mmNalaka/nm-chain.git",
   "author": "Nalaka Manathunga <mxnalaka@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
   "dependencies": {
     "crypto-js": "^3.1.9-1"
   },
